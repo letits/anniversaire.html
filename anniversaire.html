@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>............</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@1,9..144,600&family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --fond: #fff0f4;
+    --rose-clair: #fbd3df;
+    --rose: #e98fab;
+    --texte: #6b2d45;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(180deg, var(--fond) 0%, var(--rose-clair) 100%);
+    color: var(--texte);
+    font-family: "Nunito", system-ui, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 56px 20px 64px;
+    text-align: center;
+  }
+  h1 {
+    margin: 0;
+    font-family: "Fraunces", Georgia, serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: clamp(2.6rem, 9vw, 5rem);
+    line-height: 1.05;
+    color: var(--rose);
+  }
+  .sous-titre {
+    margin: 20px 0 36px;
+    max-width: 30em;
+    font-size: clamp(1.05rem, 3.2vw, 1.3rem);
+    line-height: 1.5;
+  }
+  video {
+    display: block;
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    border-radius: 20px;
+    border: 6px solid #fff;
+    box-shadow: 0 10px 30px rgba(233, 143, 171, 0.45);
+    background: var(--rose-clair);
+  }
+</style>
+</head>
+<body>
+
+  <h1>...........</h1>
+
+  <!-- ✏️ Écris ton sous-titre ici, à la place de la phrase ci-dessous -->
+  <p class="sous-titre">Écris ici ton message pour elle.</p>
+
+  <!-- 🎬 Remplace ma-video.mp4 par le nom de ton fichier vidéo (dans le même dossier que ce fichier) -->
+  <video controls playsinline preload="metadata">
+    <source src="ma-video.mp4" type="video/mp4">
+    Ton navigateur ne peut pas lire cette vidéo.
+  </video>
+
+</body>
+</html>
